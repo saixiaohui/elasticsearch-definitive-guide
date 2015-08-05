@@ -41,7 +41,7 @@ rule wins.  Take the following rules as an example:
     "united states            => usa",
     "united states of america => usa"
 
-If these rules conflicted, Elasticsearch would turn `United States of
+If these rules conflicted, Elasticsearch would NOT turn `United States of
 America` into the terms `(usa),(of),(america)`.  Instead, the longest
 sequence wins, and we end up with just the term `(usa)`.
 
